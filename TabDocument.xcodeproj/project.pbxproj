@@ -17,14 +17,14 @@
 		927B3B3B193A84560075CC52 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927B3B17193A84560075CC52 /* Cocoa.framework */; };
 		927B3B43193A84560075CC52 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 927B3B41193A84560075CC52 /* InfoPlist.strings */; };
 		927B3B45193A84560075CC52 /* TabDocumentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 927B3B44193A84560075CC52 /* TabDocumentTests.m */; };
-		927B3B4F193A84AA0075CC52 /* MMTabBarView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927B3B4E193A84AA0075CC52 /* MMTabBarView.framework */; };
-		927B3B51193A85030075CC52 /* MMTabBarView.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 927B3B4E193A84AA0075CC52 /* MMTabBarView.framework */; };
 		927B3B54193A86420075CC52 /* HMDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 927B3B53193A86420075CC52 /* HMDocumentController.m */; };
 		927B3B59193A86810075CC52 /* Window.xib in Resources */ = {isa = PBXBuildFile; fileRef = 927B3B56193A86810075CC52 /* Window.xib */; };
 		927B3B5A193A86810075CC52 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 927B3B57193A86810075CC52 /* View.xib */; };
 		927B3B5C193A86A30075CC52 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 927B3B5B193A86A30075CC52 /* MainMenu.xib */; };
 		927B3B5F193A86B30075CC52 /* HMWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 927B3B5E193A86B30075CC52 /* HMWindowController.m */; };
 		927B3B62193A86DB0075CC52 /* HMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 927B3B61193A86DB0075CC52 /* HMViewController.m */; };
+		927B3B82193A8B960075CC52 /* MMTabBarView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927B3B81193A8ABD0075CC52 /* MMTabBarView.framework */; };
+		927B3B83193A8BBA0075CC52 /* MMTabBarView.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 927B3B81193A8ABD0075CC52 /* MMTabBarView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +35,13 @@
 			remoteGlobalIDString = 927B3B13193A84560075CC52;
 			remoteInfo = TabDocument;
 		};
+		927B3B80193A8ABD0075CC52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 927B3B7C193A8ABD0075CC52 /* MMTabBarView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06DB23A61609F5830071BDA0;
+			remoteInfo = MMTabBarView;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,7 +51,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				927B3B51193A85030075CC52 /* MMTabBarView.framework in CopyFiles */,
+				927B3B83193A8BBA0075CC52 /* MMTabBarView.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,7 +76,6 @@
 		927B3B40193A84560075CC52 /* TabDocumentTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TabDocumentTests-Info.plist"; sourceTree = "<group>"; };
 		927B3B42193A84560075CC52 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		927B3B44193A84560075CC52 /* TabDocumentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabDocumentTests.m; sourceTree = "<group>"; };
-		927B3B4E193A84AA0075CC52 /* MMTabBarView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MMTabBarView.framework; sourceTree = "<group>"; };
 		927B3B52193A86420075CC52 /* HMDocumentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMDocumentController.h; sourceTree = "<group>"; };
 		927B3B53193A86420075CC52 /* HMDocumentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMDocumentController.m; sourceTree = "<group>"; };
 		927B3B56193A86810075CC52 /* Window.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Window.xib; sourceTree = "<group>"; };
@@ -79,6 +85,7 @@
 		927B3B5E193A86B30075CC52 /* HMWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMWindowController.m; sourceTree = "<group>"; };
 		927B3B60193A86DB0075CC52 /* HMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMViewController.h; sourceTree = "<group>"; };
 		927B3B61193A86DB0075CC52 /* HMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMViewController.m; sourceTree = "<group>"; };
+		927B3B7C193A8ABD0075CC52 /* MMTabBarView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MMTabBarView.xcodeproj; path = MMTabBarView/MMTabBarView.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +93,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				927B3B82193A8B960075CC52 /* MMTabBarView.framework in Frameworks */,
 				927B3B18193A84560075CC52 /* Cocoa.framework in Frameworks */,
-				927B3B4F193A84AA0075CC52 /* MMTabBarView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +117,7 @@
 				927B3B3E193A84560075CC52 /* TabDocumentTests */,
 				927B3B16193A84560075CC52 /* Frameworks */,
 				927B3B15193A84560075CC52 /* Products */,
+				927B3B7C193A8ABD0075CC52 /* MMTabBarView.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,7 +133,6 @@
 		927B3B16193A84560075CC52 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				927B3B4E193A84AA0075CC52 /* MMTabBarView.framework */,
 				927B3B17193A84560075CC52 /* Cocoa.framework */,
 				927B3B39193A84560075CC52 /* XCTest.framework */,
 				927B3B19193A84560075CC52 /* Other Frameworks */,
@@ -193,6 +200,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		927B3B7D193A8ABD0075CC52 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				927B3B81193A8ABD0075CC52 /* MMTabBarView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -258,6 +273,12 @@
 			mainGroup = 927B3B0B193A84560075CC52;
 			productRefGroup = 927B3B15193A84560075CC52 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 927B3B7D193A8ABD0075CC52 /* Products */;
+					ProjectRef = 927B3B7C193A8ABD0075CC52 /* MMTabBarView.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				927B3B13193A84560075CC52 /* TabDocument */,
@@ -265,6 +286,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		927B3B81193A8ABD0075CC52 /* MMTabBarView.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MMTabBarView.framework;
+			remoteRef = 927B3B80193A8ABD0075CC52 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		927B3B12193A84560075CC52 /* Resources */ = {
