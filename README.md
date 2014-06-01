@@ -5,7 +5,7 @@ Simple document based app that supports multi-documents within a window controll
 
 ##Download
 
-[TabDocument.dmg (354K)](TabDocument.dmg)<br><br>
+[TabDocument.dmg (354K)](https://github.com/sjhorn/TabDocument/raw/master/TabDocument.dmg)<br><br>
 
 ![TabDocument](TabDocument.png "TabDocument")
 
