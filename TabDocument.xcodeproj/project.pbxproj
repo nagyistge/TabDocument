@@ -24,7 +24,7 @@
 		927B3B5F193A86B30075CC52 /* HMWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 927B3B5E193A86B30075CC52 /* HMWindowController.m */; };
 		927B3B62193A86DB0075CC52 /* HMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 927B3B61193A86DB0075CC52 /* HMViewController.m */; };
 		927B3B82193A8B960075CC52 /* MMTabBarView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927B3B81193A8ABD0075CC52 /* MMTabBarView.framework */; };
-		927B3B83193A8BBA0075CC52 /* MMTabBarView.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 927B3B81193A8ABD0075CC52 /* MMTabBarView.framework */; };
+		927B3BC0193AB6E40075CC52 /* MMTabBarView.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 927B3B81193A8ABD0075CC52 /* MMTabBarView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +51,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				927B3B83193A8BBA0075CC52 /* MMTabBarView.framework in CopyFiles */,
+				927B3BC0193AB6E40075CC52 /* MMTabBarView.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +257,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Scott Horn";
 				TargetAttributes = {
+					927B3B13193A84560075CC52 = {
+						DevelopmentTeam = BHBXYS3HXS;
+					};
 					927B3B37193A84560075CC52 = {
 						TestTargetID = 927B3B13193A84560075CC52;
 					};
@@ -412,7 +415,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -446,7 +449,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				SDKROOT = macosx;
 			};
@@ -456,6 +459,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application: Scott Horn";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -464,6 +468,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TabDocument/TabDocument-Prefix.pch";
 				INFOPLIST_FILE = "TabDocument/TabDocument-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -473,6 +478,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application: Scott Horn";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -481,6 +487,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TabDocument/TabDocument-Prefix.pch";
 				INFOPLIST_FILE = "TabDocument/TabDocument-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
