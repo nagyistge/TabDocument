@@ -36,7 +36,11 @@ void* const HMWindowControllerCloseAllTabs = (void* const) &HMWindowControllerCl
 
 - (void)closeWindow:(id)sender
 {
-    [self.window close];
+    [self closeAllTabsWithBlock:^(BOOL closedAll) {
+        if (closedAll) {
+            [self close];
+        }
+    }];
 }
 
 - (void)addDocument:(HMDocument*)doc
@@ -118,7 +122,7 @@ void* const HMWindowControllerCloseAllTabs = (void* const) &HMWindowControllerCl
         finishedClosingBlock(YES);
     } else {
         _finishedClosingBlock = finishedClosingBlock;
-        _enumerator = [self.documents objectEnumerator];
+        _enumerator = [[self.documents copy] objectEnumerator];
         [[_enumerator nextObject] canCloseDocumentWithDelegate:self
                                            shouldCloseSelector:@selector(document:shouldClose:contextInfo:)
                                                    contextInfo:HMWindowControllerCloseAllTabs];

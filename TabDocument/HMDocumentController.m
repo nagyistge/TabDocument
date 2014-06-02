@@ -112,7 +112,7 @@ void* const HMDocumentCloseAllWindows = (void* const) &HMDocumentCloseAllWindows
         objc_msgSend(delegate, didCloseAllSelector, me, didCloseAll, contextInfo);
     };
     
-    _enumerator = [self.documents objectEnumerator];
+    _enumerator = [[self.documents copy] objectEnumerator];
     [[_enumerator nextObject] canCloseDocumentWithDelegate:self
                                        shouldCloseSelector:@selector(document:shouldClose:contextInfo:)
                                                contextInfo:HMDocumentCloseAllWindows];
